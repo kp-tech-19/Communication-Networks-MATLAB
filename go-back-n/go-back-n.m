@@ -1,62 +1,70 @@
 clc;clear;
 
-data='101010010000111001010010010100101';
-framesize=input("Enter framesize:");
-m=input("Enter sequence number bits(m):");
-totalframe=floor(length(data)/framesize);
-errorprb=0.2;
-windowsize=2^m -1;
+errorprobability = 0.2;
+framesize = input("Enter number of bits per frame: ");
+m = input("Enter number of sequence-number bits (m): ");
+window_size = 2^m - 1;
 
-frame=1;timeout=0.1;
+data = '0101101110100000100101011011001011001001';
+total_frames = floor(length(data) / framesize);
 
-while frame<=totalframe
-        frame_in_window=min(windowsize,totalframe-frame+1);
-        failed=false;
-        fprintf("Sending frames from %d to %d:\n",frame-1,frame+frame_in_window-2);
-        
-        for i=1:frame_in_window
-            fno=frame+i-1;
-            seqno=mod(fno-1,2^m);
+frame = 1;timeout = 0.3;
 
-            startidx=(fno-1)*framesize+1;
-            endidx=startidx+framesize-1;
-            val=data(startidx:endidx);
-            
-            r1=rand();r2=rand();r3=rand();r4=rand();
+while frame <= total_frames
 
-            if r1<0.1||r2<0.1||r3<0.1
-                if r1<0.1
-                     fprintf("Sender:Frame %d lost.Retransmitting frame %d.....\n",seqno,seqno);
-                else
-                    fprintf("Reciver:Frame %d recived.Ack delayed/lost.\n",seqno);
-                    fprintf("Sender:Timeout.Retransmitting frame %d.....\n",seqno);
-                    
-                end
-                failed=true;frame=fno;pause(timeout);break;
+    frames_in_window = min(window_size, total_frames - frame + 1);
+
+    fprintf('\nSending frames %d to %d...\n', frame-1, frame + frames_in_window - 2);
+    failed = false;
+    
+    for i = 1:frames_in_window
+
+        fno = frame + i - 1;
+        seqno = mod(fno-1, 2^m);
+
+        startidx = (fno - 1) * framesize + 1;
+        endidx = startidx + framesize - 1;
+        val = data(startidx:endidx);
+
+        r1 = rand();r2 = rand();r3 = rand();r4 = rand();
+
+        if r1 < 0.1 || r2 < 0.1 || r3 < 0.1
+            if r1 < 0.1
+                fprintf('Sender: Frame %d lost! Restarting from Frame %d\n', seqno, seqno);
             else
-                if r4<errorprb
-                    index=randi([1,framesize]);
-                    if val(index)=='0'
-                        val(index)='1';
-                    else
-                        val(index)='0';
-                    end
-                    fprintf("Frame %d is corrupted.Recived frame data:%s\n",seqno,val);
-                    if strcmp(val,data(startidx:endidx))
-                        fprintf("Reciver:Frame %d recived.Ack send.\n",seqno);
-                    else
-                        fprintf("Reciver:Frame %d corrupted. No Ack.\n",seqno);
-                        fprintf("Sender:Timeout.Retransmitting frame %d.....\n",seqno);
-                        failed=true;frame=fno;pause(timeout);break;
-                    end
+                fprintf('Receiver: Frame %d received but ACK lost/delayed!\n', seqno);
+                fprintf('Sender: Timeout! Restarting from Frame %d\n', seqno);
+            end
+            frame = fno;failed = true;pause(timeout);
+            break;
+        else
+            if r4 < errorprobability
+                index = randi([1, framesize]);
+                if val(index) == '0'
+                    val(index) = '1';
                 else
-                    fprintf("Reciver:Frame %d recived.Ack send.\n",seqno);
+                    val(index) = '0';
                 end
+                fprintf('Frame %d corrupted during transmission!\n', seqno);
+            end
+            
+            fprintf('Frame %d received: %s\n', seqno, val);
+            
+            if strcmp(val, data(startidx:endidx))
+                fprintf('Receiver: Frame %d received correctly. ACK %d sent.\n', seqno, seqno);
+            else
+                fprintf('Receiver: Frame %d corrupted! No ACK.\n', seqno);
+                fprintf('Sender: Timeout! Restarting from Frame %d\n', seqno);
+                frame = fno;failed = true;pause(timeout);
+                break;
             end
         end
-       if ~failed
-            frame= frame+frame_in_window;
-       end
-
+    end
+    
+    if ~failed
+        frame = frame + frames_in_window;
+    end
 end
-fprintf("All frames are transmitted successfully.\n");
+
+fprintf('\nAll frames sent and acknowledged successfully!\n');
+
