@@ -1,0 +1,102 @@
+Frame: 1 
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS not recived.Retrying...
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 2 
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 3 
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 4 
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 5 
+Channel is busy.Wait for IFS
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS not recived.Retrying...
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 6 
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK not recived. Retrying...
+----------------------------------
+Frame: 7 
+Channel is busy.Wait for IFS
+Channel is busy.Wait for IFS
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS not recived.Retrying...
+Channel is busy.Wait for IFS
+Channel is free.Wait for IFS
+Backoff= 1 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 8 
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 9 
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+Frame: 10 
+Channel is free.Wait for IFS
+Backoff= 0 
+RTS sending
+CTS recived.Recived successfully.
+ACK recived.Recived successfully.
+----------------------------------
+>> 
