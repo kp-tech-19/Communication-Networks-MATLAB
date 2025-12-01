@@ -1,79 +1,75 @@
 Enter number of bits per frame: 3
 Enter number of sequence-number bits (m): 2
 
-Sending frames 0 to 2...
-Receiver: Frame 0 received but ACK lost/delayed!
-Sender: Timeout! Restarting from Frame 0
-
-Sending frames 0 to 2...
-Frame 0 received: 010
-Receiver: Frame 0 received correctly. ACK 0 sent.
-Frame 1 received: 110
-Receiver: Frame 1 received correctly. ACK 1 sent.
-Frame 2 received: 111
-Receiver: Frame 2 received correctly. ACK 2 sent.
-
-Sending frames 3 to 5...
-Frame 3 corrupted during transmission!
-Frame 3 received: 110
-Receiver: Frame 3 corrupted! No ACK.
-Sender: Timeout! Restarting from Frame 3
-
-Sending frames 3 to 5...
-Frame 3 corrupted during transmission!
-Frame 3 received: 000
-Receiver: Frame 3 corrupted! No ACK.
-Sender: Timeout! Restarting from Frame 3
-
-Sending frames 3 to 5...
-Frame 3 received: 010
-Receiver: Frame 3 received correctly. ACK 3 sent.
-Frame 0 received: 000
-Receiver: Frame 0 received correctly. ACK 0 sent.
+Sending frames 1 to 3...
 Frame 1 received: 010
-Receiver: Frame 1 received correctly. ACK 1 sent.
-
-Sending frames 6 to 8...
-Frame 2 received: 010
-Receiver: Frame 2 received correctly. ACK 2 sent.
-Frame 3 received: 101
-Receiver: Frame 3 received correctly. ACK 3 sent.
-Frame 0 corrupted during transmission!
-Frame 0 received: 100
-Receiver: Frame 0 corrupted! No ACK.
-Sender: Timeout! Restarting from Frame 0
-
-Sending frames 8 to 10...
-Frame 0 received: 101
-Receiver: Frame 0 received correctly. ACK 0 sent.
-Sender: Frame 1 lost! Restarting from Frame 1
-
-Sending frames 9 to 11...
-Receiver: Frame 1 received but ACK lost/delayed!
-Sender: Timeout! Restarting from Frame 1
-
-Sending frames 9 to 11...
-Frame 1 received: 100
-Receiver: Frame 1 received correctly. ACK 1 sent.
-Sender: Frame 2 lost! Restarting from Frame 2
-
-Sending frames 10 to 12...
-Frame 2 received: 101
-Receiver: Frame 2 received correctly. ACK 2 sent.
-Frame 3 corrupted during transmission!
-Frame 3 received: 110
-Receiver: Frame 3 corrupted! No ACK.
-Sender: Timeout! Restarting from Frame 3
-
-Sending frames 11 to 12...
+Receiver: Frame 1 received correctly. ACK sent.
+Frame 2 received: 110
+Receiver: Frame 2 received correctly. ACK sent.
 Receiver: Frame 3 received but ACK lost/delayed!
 Sender: Timeout! Restarting from Frame 3
 
-Sending frames 11 to 12...
-Frame 3 received: 100
-Receiver: Frame 3 received correctly. ACK 3 sent.
-Frame 0 received: 100
-Receiver: Frame 0 received correctly. ACK 0 sent.
+Sending frames 3 to 5...
+Frame 3 received: 111
+Receiver: Frame 3 received correctly. ACK sent.
+Frame 4 corrupted during transmission!
+Frame 4 received: 110
+Receiver: Frame 4 corrupted! No ACK.
+Sender: Timeout! Restarting from Frame 4
+
+Sending frames 4 to 6...
+Frame 4 corrupted during transmission!
+Frame 4 received: 011
+Receiver: Frame 4 corrupted! No ACK.
+Sender: Timeout! Restarting from Frame 4
+
+Sending frames 4 to 6...
+Receiver: Frame 4 received but ACK lost/delayed!
+Sender: Timeout! Restarting from Frame 4
+
+Sending frames 4 to 6...
+Frame 4 received: 010
+Receiver: Frame 4 received correctly. ACK sent.
+Frame 5 received: 000
+Receiver: Frame 5 received correctly. ACK sent.
+Frame 6 received: 010
+Receiver: Frame 6 received correctly. ACK sent.
+
+Sending frames 7 to 9...
+Receiver: Frame 7 received but ACK lost/delayed!
+Sender: Timeout! Restarting from Frame 7
+
+Sending frames 7 to 9...
+Receiver: Frame 7 received but ACK lost/delayed!
+Sender: Timeout! Restarting from Frame 7
+
+Sending frames 7 to 9...
+Frame 7 corrupted during transmission!
+Frame 7 received: 000
+Receiver: Frame 7 corrupted! No ACK.
+Sender: Timeout! Restarting from Frame 7
+
+Sending frames 7 to 9...
+Frame 7 received: 010
+Receiver: Frame 7 received correctly. ACK sent.
+Receiver: Frame 8 received but ACK lost/delayed!
+Sender: Timeout! Restarting from Frame 8
+
+Sending frames 8 to 10...
+Frame 8 received: 101
+Receiver: Frame 8 received correctly. ACK sent.
+Frame 9 received: 101
+Receiver: Frame 9 received correctly. ACK sent.
+Frame 10 received: 100
+Receiver: Frame 10 received correctly. ACK sent.
+
+Sending frames 11 to 13...
+Frame 11 received: 101
+Receiver: Frame 11 received correctly. ACK sent.
+Frame 12 received: 100
+Receiver: Frame 12 received correctly. ACK sent.
+Frame 13 received: 100
+Receiver: Frame 13 received correctly. ACK sent.
 
 All frames sent and acknowledged successfully!
 >> 
