@@ -1,0 +1,36 @@
+Enter no. of nodes:4
+Enter the y.d x.d cost adj. matrix(Use inf for no link):
+Cost of node 1 to node 2:3
+Cost of node 1 to node 3:inf
+Cost of node 1 to node 4:7
+
+Cost of node 2 to node 1:inf
+Cost of node 2 to node 3:2
+Cost of node 2 to node 4:4
+
+Cost of node 3 to node 1:5
+Cost of node 3 to node 2:inf
+Cost of node 3 to node 4:3
+
+Cost of node 4 to node 1:8
+Cost of node 4 to node 2:2
+Cost of node 4 to node 3:inf
+
+Inital cost adj. matrix:
+     0     3   Inf     7
+   Inf     0     2     4
+     5   Inf     0     3
+     8     2   Inf     0
+
+Distance Table
+     0     3     5     7
+     3     0     2     4
+     5     2     0     3
+     7     4     3     0
+
+Enter source node:2
+Enter destination node:4
+Shortestpath
+     2     4
+
+>> 
