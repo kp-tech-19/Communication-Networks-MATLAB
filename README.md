@@ -12,8 +12,6 @@ Each experiment includes MATLAB scripts, simulation outputs, performance plots, 
 5. Link State Routing  
 6. Collision Detection (CSMA/CD)  
 
----
-
 ## Getting Started
 
 1. Open MATLAB  
@@ -22,10 +20,6 @@ Each experiment includes MATLAB scripts, simulation outputs, performance plots, 
 4. Run the corresponding `.m` file to simulate the experiment  
 5. Generated plots are stored as `.png` files inside each experiment directory  
 
----
-
 ## Requirements
 
 - MATLAB  
-
----
