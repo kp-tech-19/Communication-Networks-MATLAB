@@ -1,0 +1,45 @@
+Enter frame size (data bits): 3
+Enter number of bits for sequence numbers: 2
+Sending frames 0 to 2...
+Frame 0 received: 010
+Receiver: Frame 0 received. ACK sent.
+Receiver: Frame 1 received but ACK lost!
+Frame 2 received: 111
+Receiver: Frame 2 received. ACK sent.
+Retransmitting Frame 1...
+Retransmission of Frame 1 successful.
+Sending frames 3 to 5...
+Frame 3 received: 010
+Receiver: Frame 3 received. ACK sent.
+Receiver: Frame 4 received but ACK delayed!
+Frame 5 received: 010
+Receiver: Frame 5 received. ACK sent.
+Retransmitting Frame 4...
+Retransmission of Frame 4 failed.
+Retransmission of Frame 4 successful.
+Sending frames 6 to 8...
+Frame 6 received: 010
+Receiver: Frame 6 received. ACK sent.
+Receiver: Frame 7 received but ACK lost!
+Frame 8 received: 101
+Receiver: Frame 8 received. ACK sent.
+Retransmitting Frame 7...
+Retransmission of Frame 7 successful.
+Sending frames 9 to 11...
+Receiver: Frame 9 received but ACK lost!
+Receiver: Frame 10 received but ACK delayed!
+Frame 11 received: 100
+Receiver: Frame 11 received. ACK sent.
+Retransmitting Frame 9...
+Retransmission of Frame 9 successful.
+Retransmitting Frame 10...
+Retransmission of Frame 10 successful.
+Sending frames 12 to 12...
+Frame 12 corrupted during transmission!
+Frame 12 received: 110
+Frame 12 corrupted.
+Retransmitting Frame 12...
+Retransmission of Frame 12 successful.
+
+All frames successfully transmitted and acknowledged.
+>> 
