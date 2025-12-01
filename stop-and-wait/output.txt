@@ -1,0 +1,33 @@
+Enter framesize:4
+Transmitting frame 0 with data 1010
+Ack 0 not recived
+Transmitting frame 0 with data 1010
+Ack 0 recived
+Transmitting frame 1 with data 1010
+Ack 1 recived after delay
+Transmitting frame 0 with data 1100
+Ack 0 recived after delay
+Transmitting frame 1 with data 1101
+Frame 1 corruputed. Frame recived :0101
+Frame 1 corruputed. Retransmitting frame....
+Transmitting frame 1 with data 1101
+Ack 1 not recived
+Transmitting frame 1 with data 1101
+Ack 1 recived after delay
+Transmitting frame 0 with data 0101
+Ack 0 not recived
+Transmitting frame 0 with data 0101
+Ack 0 recived after delay
+Transmitting frame 1 with data 0010
+Ack 1 not recived
+Transmitting frame 1 with data 0010
+Ack 1 recived after delay
+Transmitting frame 0 with data 0100
+Frame 0 corruputed. Frame recived :0000
+Frame 0 corruputed. Retransmitting frame....
+Transmitting frame 0 with data 0100
+Ack 0 recived
+Transmitting frame 1 with data 1010
+Ack 1 recived
+All frames transmitted successfully
+>> 
